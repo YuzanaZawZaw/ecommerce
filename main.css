@@ -1,0 +1,73 @@
+body{
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+#nav{
+    background-color: #fff;
+}
+.nav-link{
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.brand-color{
+    color:#333333;
+}
+.nav-link:hover ,.brand-color:hover{
+    color: #b37a34; /* A slightly darker shade for hover effect */
+}
+.navbar-toggler{
+    outline: none!important;
+}
+/*Banner OR Hero Section*/
+.banner{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background:#b3b347;
+    position: relative;
+    overflow: hidden;
+    z-index: 9;
+}
+.banner .row{
+min-height: calc(100vh-174px);
+}
+.banner.inner-page,.banner.inner-page .row{
+    min-height: 400px;
+    height: 500px;
+}
+.banner h2{
+    font-size: 14px;
+    font-weight: normal;
+    color:#fff;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.banner h1{
+    font-size: 50px;
+    font-weight: bold;
+    color:#fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+@media(min-width:768px){
+    .banner h1{
+        font-size:70px;
+    }
+    .banner p{
+        color:#fff;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .banner .intro-text{
+        font-size:16px;
+        line-height: 1.5;
+
+    }
+    .banner-content{
+        margin-top:20%;
+        text-align: center;
+    }
+}
