@@ -639,17 +639,27 @@ body {
 }
 
 #footer .footer-top p {
-    font-size: 15;
     font-style: italic;
     margin: 30px 0 0 0;
     padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 #footer .footer-top p i{
     color: #333333;
-    font-size: 15;
-    margin: 30px 0 0 0;
+    font-size: 20px;
+    margin: 0;
     padding: 0;
+    vertical-align: middle;
+}
+
+#footer .footer-top p span{
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
 }
 
 #footer .footer-top .footer-newsletter {
@@ -695,13 +705,16 @@ body {
 
 #footer .footer-top .social-links {
     margin-top: 30px;
+    display: flex;
+    justify-content: center; 
+    gap: 15px; 
 }
 
 #footer .footer-top .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #333333;
-    color: #fff;
+    background: white;
+    color: #333;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -709,13 +722,27 @@ body {
     text-align: center;
     width: 36px;
     height: 36px;
-    transition: 0.3s;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.2s;
 }
 
-#footer .footer-top .social-links a:hover {
-    background: rgb(68, 63, 35);
-    color: #fff;
+#footer .footer-top .social-links a.facebook{
+    color: #1877F2; 
+}
+
+#footer .footer-top .social-links a.facebook:hover {
+    background: rgb(68, 63, 35); 
     text-decoration: none;
+    transform: scale(1.1); 
+}
+
+#footer .footer-top .social-links a.tiktok {
+    color: black; 
+}
+
+#footer .footer-top .social-links a.tiktok:hover {
+    background: #444; 
+    color: white;
+    transform: scale(1.1); 
 }
 
 #footer .footer-bottom {
@@ -736,8 +763,3 @@ body {
     padding-top: 5px;
 }
 
-.bi {
-    font-size: 22px; 
-    color: #333; 
-    margin-right: 10px; 
-}
