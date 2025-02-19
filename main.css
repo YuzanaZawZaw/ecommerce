@@ -5,8 +5,12 @@ body {
     font-style: normal;
 }
 
-#nav {
+#main-navbar {
     background-color: #fff;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 20px; 
 }
 
 .nav-link {
@@ -21,13 +25,10 @@ body {
 
 .nav-link:hover,
 .brand-color:hover {
-    color: #b37a34;
-    /* A slightly darker shade for hover effect */
+    color: #b3b347;
 }
 
-.navbar-toggler {
-    outline: none !important;
-}
+
 
 /*Banner OR Hero Section*/
 .banner {
